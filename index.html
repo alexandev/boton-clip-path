@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Menú - Clip Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a2e8d0339c.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <div class="container-menu" id="container-menu">
+        <p class="btn-open-menu" id="btn-open-menu">
+            <i class="fas fa-home"></i>
+        </p>
+
+        <nav class="elements-navigation">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Lorem Ipsum</h1>
+            <p class="text-introduction">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, facilis itaque deserunt eos eum incidunt accusantium laudantium iure recusandae delectus.</p>
+        </header>
+    </div>
+
+    <script>
+        const menu=document.getElementById("btn-open-menu")
+        menu.addEventListener("click", ()=>{
+            document.getElementById('container-menu').classList.toggle('active')
+        })
+    </script>
+</body>
+</html>
